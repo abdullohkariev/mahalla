@@ -246,10 +246,7 @@ const Reservation = () => {
                 </div>
                 <div>
                   <label>{t('reserve.field.time')}</label>
-                  <select value={form.time} onChange={update('time')}>
-                    <option value="" disabled hidden></option>
-                    {TIMES.map((tm) => <option key={tm}>{tm}</option>)}
-                  </select>
+                  <input type="time" value={form.time} onChange={update('time')} required />
                 </div>
               </div>
 
