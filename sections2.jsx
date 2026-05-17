@@ -337,7 +337,8 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <span style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}>{t('footer.design')} · SD</span>
+          <span style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}>{t('footer.design')}</span>
+          <img src="assets/SD..svg" alt="SD" style={{ height: 28, display: 'inline-block', verticalAlign: 'middle', marginLeft: 10 }} />
         </div>
       </div>
     </footer>
