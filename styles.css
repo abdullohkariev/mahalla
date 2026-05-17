@@ -221,6 +221,35 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   .nav-links { display: none; }
 }
 
+.hamburger { display: none; flex-direction: column; gap: 5px; padding: 6px; cursor: pointer; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; }
+@media (max-width: 1080px) {
+  .hamburger { display: flex; }
+  .nav-cta { display: none; }
+}
+
+.mobile-menu {
+  position: absolute; top: 100%; left: 0; right: 0;
+  background: var(--paper);
+  border-top: 1px solid var(--rule);
+  display: flex; flex-direction: column;
+  padding: 16px 24px 24px;
+  gap: 0;
+  z-index: 100;
+}
+.mobile-menu a {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink-2);
+}
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-reserve {
+  margin-top: 8px;
+  color: var(--ink) !important;
+  font-weight: 500;
+}
+
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex;

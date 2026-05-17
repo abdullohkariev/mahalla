@@ -75,12 +75,15 @@ const LangSwitch = ({ compact }) => {
 // ---------- Nav ----------
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const t = useT();
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  const close = () => setMenuOpen(false);
 
   return (
     <header className={`nav ${scrolled ? 'scrolled' : ''}`}>
@@ -101,7 +104,21 @@ const Nav = () => {
           {t('nav.reserve')}
           <span className="arrow">→</span>
         </a>
+        <button className="hamburger" aria-label="Menu" onClick={() => setMenuOpen(o => !o)}>
+          <span></span><span></span><span></span>
+        </button>
       </div>
+
+      {menuOpen && (
+        <div className="mobile-menu">
+          <a href="#about" onClick={close}>{t('nav.philosophy')}</a>
+          <a href="#menu" onClick={close}>{t('nav.menu')}</a>
+          <a href="#banquets" onClick={close}>{t('nav.banquets')}</a>
+          <a href="#gallery" onClick={close}>{t('nav.atmosphere')}</a>
+          <a href="#location" onClick={close}>{t('nav.location')}</a>
+          <a href="#reserve" onClick={close} className="mobile-reserve">{t('nav.reserve')} →</a>
+        </div>
+      )}
     </header>
   );
 };
