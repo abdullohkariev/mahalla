@@ -125,7 +125,7 @@ const OrnamentDivider = ({ width = 200, color = "currentColor" }) => (
 );
 
 // Circular text label "BADGE"
-const CircularText = ({ text = "MAHALLA 90 · SINCE 1990 · TASHKENT ·", radius = 60, fontSize = 9 }) => {
+const CircularText = ({ text = "MAHALLA 90 · SINCE 2024 · TASHKENT ·", radius = 60, fontSize = 9 }) => {
   const id = `c${Math.random().toString(36).slice(2, 8)}`;
   return (
     <svg viewBox="-80 -80 160 160" width="100%" height="100%">

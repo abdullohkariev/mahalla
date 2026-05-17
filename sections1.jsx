@@ -342,12 +342,12 @@ const About = () => {
                   <path id="circletext" d="M 0,0 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
                 </defs>
                 <text fontFamily="var(--font-body)" fontSize="8" letterSpacing="4" fill="currentColor" fontWeight="500">
-                  <textPath href="#circletext">MAHALLA 90' · TASHKENT · SINCE 1990 · </textPath>
+                  <textPath href="#circletext">MAHALLA 90' · TASHKENT · SINCE 2024 · </textPath>
                 </text>
               </svg>
               <div className="core">
                 <span className="script" style={{ fontSize: 36, color: 'var(--gold)' }}>est.</span>
-                <div style={{ position: 'absolute', bottom: 38, fontSize: 14, fontStyle: 'italic' }}>1990</div>
+                <div style={{ position: 'absolute', bottom: 38, fontSize: 14, fontStyle: 'italic' }}>2024</div>
               </div>
             </div>
           </div>

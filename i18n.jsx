@@ -175,7 +175,7 @@ const TRANSLATIONS = {
     'reserve.success.guests': 'гостей',
 
     // Footer
-    'footer.tagline': 'Вкус, уют, традиции. Узбекская кухня в премиальном формате — с 1990 года в самом сердце Ташкента.',
+    'footer.tagline': 'Вкус, уют, традиции. Узбекская кухня в премиальном формате — с 2024 года в самом сердце Ташкента.',
     'footer.h4.menu': 'Меню',
     'footer.h4.guests': 'Гостям',
     'footer.h4.contacts': 'Контакты',
@@ -350,7 +350,7 @@ const TRANSLATIONS = {
     'reserve.success.callTo': "Qo'ng'iroq qilamiz:",
     'reserve.success.guests': 'mehmon',
 
-    'footer.tagline': "Ta'm, qulaylik, an'analar. Premium o'zbek oshxonasi — 1990 yildan Toshkent markazida.",
+    'footer.tagline': "Ta'm, qulaylik, an'analar. Premium o'zbek oshxonasi — 2024 yildan Toshkent markazida.",
     'footer.h4.menu': 'Menyu',
     'footer.h4.guests': 'Mehmonlarga',
     'footer.h4.contacts': 'Kontaktlar',
@@ -525,7 +525,7 @@ const TRANSLATIONS = {
     'reserve.success.callTo': "We'll call",
     'reserve.success.guests': 'guests',
 
-    'footer.tagline': "Taste, comfort, tradition. Premium Uzbek cuisine — since 1990 in the heart of Tashkent.",
+    'footer.tagline': "Taste, comfort, tradition. Premium Uzbek cuisine — since 2024 in the heart of Tashkent.",
     'footer.h4.menu': 'Menu',
     'footer.h4.guests': 'Guests',
     'footer.h4.contacts': 'Contacts',
