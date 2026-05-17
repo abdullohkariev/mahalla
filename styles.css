@@ -1085,7 +1085,17 @@ h2 .ital { font-style: italic; color: var(--cobalt); }
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
-@media (max-width: 600px) { .reserve-form .grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) {
+  .reserve-form .grid { grid-template-columns: 1fr; }
+  .reserve-form { padding: 40px 28px; align-items: center; text-align: center; }
+  .reserve-form label { text-align: left; }
+  .reserve-form .grid, .reserve-form > div { width: 100%; }
+  .reserve-form .submit-row { justify-content: center; }
+  .reserve-side { padding: 48px 28px; text-align: center; }
+  .reserve-side p { margin-left: auto; margin-right: auto; }
+  .reserve-side .hour-list .row { justify-content: center; gap: 24px; }
+  .reserve-side .call-cta { text-align: center; }
+}
 .reserve-form label {
   display: block;
   font-size: 11px;
