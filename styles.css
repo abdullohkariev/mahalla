@@ -761,7 +761,10 @@ h2 .ital { font-style: italic; color: var(--cobalt); }
   gap: 80px;
   align-items: start;
 }
-@media (max-width: 960px) { .banquets-grid { grid-template-columns: 1fr; } }
+@media (max-width: 960px) {
+  .banquets-grid { grid-template-columns: 1fr; }
+  .banquets-video { width: 75%; margin: 0 auto; position: static; }
+}
 .banquets-left { display: flex; flex-direction: column; }
 .banquets-left .eyebrow { color: var(--gold-2); }
 .banquets-left .banquet-types { margin-top: 48px; flex-direction: column; gap: 0; }
