@@ -79,7 +79,6 @@ const Gallery = () => {
             <div key={i} className={`gallery-cell ${g.cls} reveal`} style={{ transitionDelay: `${i * 0.05}s` }}>
               <img src={g.photo} alt="" loading="lazy" />
               <span className="tag">{t(`gallery.tag.${g.tagKey}`)}</span>
-              <span className="label">{t(`gallery.cell.${g.labelKey}`)}</span>
             </div>
           ))}
         </div>
