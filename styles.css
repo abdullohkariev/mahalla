@@ -485,28 +485,24 @@ h2 .ital { font-style: italic; color: var(--cobalt); }
 
 .about-image-stack {
   position: relative;
-  height: 640px;
+  display: flex;
+  justify-content: center;
 }
 .about-image-stack .img {
-  position: absolute;
-  border-radius: 6px;
+  border-radius: 12px;
   overflow: hidden;
   background: var(--bg-2);
   box-shadow: 0 25px 60px -25px rgba(31, 63, 138, 0.35);
 }
 .about-image-stack .img.big {
-  top: 0; left: 0;
-  width: 70%; height: 75%;
-}
-.about-image-stack .img.small {
-  bottom: 0; right: 0;
-  width: 50%; height: 55%;
-  border: 6px solid var(--paper);
+  aspect-ratio: 9/16;
+  max-height: 600px;
+  width: 75%;
 }
 .about-image-stack .badge {
   position: absolute;
-  top: 60%;
-  left: 64%;
+  bottom: 10%;
+  right: 0;
   background: var(--paper);
   border-radius: 50%;
   width: 150px; height: 150px;
