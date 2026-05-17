@@ -272,8 +272,7 @@ const Reservation = () => {
               </div>
 
               <div className="submit-row">
-                <p className="note">{t('reserve.note')}</p>
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-primary btn-large">
                   {t('reserve.submit')} <span>→</span>
                 </button>
               </div>
