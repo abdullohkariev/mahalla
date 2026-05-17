@@ -333,7 +333,6 @@ const Footer = () => {
                 <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C9.6 21 3 14.4 3 6.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6a1 1 0 0 1-.2 1L6.6 10.8Z" />
               </svg>
             </a>
-            <a href="tel:+998771000505" className="phone-number">+998 77 100 05 05</a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 8 }}>
             <span style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}>{t('footer.design')}</span>
