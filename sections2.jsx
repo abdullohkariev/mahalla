@@ -61,15 +61,13 @@ const Gallery = () => {
   return (
     <section className="section gallery" id="gallery">
       <div className="shell">
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 60, gap: 32, flexWrap: 'wrap' }}>
-          <div>
-            <span className="eyebrow reveal"><span className="dot"></span>{t('gallery.eyebrow')}</span>
-            <h2 className="reveal reveal-delay-1">
-              {t('gallery.h2.line1')}<br />
-              <span className="ital">{t('gallery.h2.line2')}</span>
-            </h2>
-          </div>
-          <p className="reveal reveal-delay-2" style={{ maxWidth: 360, fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 18, color: 'var(--ink-2)' }}>
+        <div style={{ marginBottom: 60 }}>
+          <span className="eyebrow reveal"><span className="dot"></span>{t('gallery.eyebrow')}</span>
+          <h2 className="reveal reveal-delay-1">
+            {t('gallery.h2.line1')}<br />
+            <span className="ital">{t('gallery.h2.line2')}</span>
+          </h2>
+          <p className="reveal reveal-delay-2" style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 18, color: 'var(--ink-2)', marginTop: 16 }}>
             {t('gallery.lede')}
           </p>
         </div>
