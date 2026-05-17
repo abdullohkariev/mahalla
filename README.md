@@ -2,7 +2,7 @@
 
 Official website for **Mahalla 90'**, a premium Uzbek restaurant in Tashkent.
 
-🌐 **Live site:** [abdullohkariev.github.io/mahalla](https://abdullohkariev.github.io/mahalla/)
+🌐 **Live site:** [shosh-digital-tech.github.io/mahalla]([https://abdullohkariev.github.io/mahalla/](https://shosh-digital-tech.github.io/Mahalla-90/))
 
 ---
 
