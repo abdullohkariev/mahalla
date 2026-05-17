@@ -337,7 +337,7 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <span style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}>{t('footer.design')}</span>
+          <span style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}>{t('footer.design')} · SD</span>
         </div>
       </div>
     </footer>
