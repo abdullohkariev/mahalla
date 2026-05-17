@@ -496,7 +496,12 @@ h2 .ital { font-style: italic; color: var(--cobalt); }
   margin-top: 56px;
   padding-top: 32px;
   border-top: 1px solid var(--rule);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .about-stat-row { gap: 16px; }
+  .about-stat .n { font-size: 38px; }
 }
 .about-stat .n {
   font-family: var(--font-display);
