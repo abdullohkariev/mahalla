@@ -328,11 +328,11 @@ const Footer = () => {
                 <path d="M21.4 4.2 2.8 11.4c-1 .4-1 .9-.2 1.2l4.4 1.4 1.7 5.2c.2.6.4.6.8.2l2.4-2.3 4.4 3.3c.8.5 1.4.2 1.6-.7l2.9-13.6c.3-1.2-.4-1.7-1.4-1.4Zm-4.8 4.4-8.5 7.7-.3 3.3-1.6-5.2 10-6.5c.5-.3.8 0 .4.7Z" />
               </svg>
             </a>
-            <a href="tel:+998771000505" aria-label="Phone" style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <a href="tel:+998771000505" aria-label="Phone" className="phone-link" style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C9.6 21 3 14.4 3 6.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6a1 1 0 0 1-.2 1L6.6 10.8Z" />
               </svg>
-              <span style={{ fontSize: 13, letterSpacing: '0.03em' }}>+998 77 100 05 05</span>
+              <span style={{ fontSize: 13, letterSpacing: '0.03em', whiteSpace: 'nowrap' }}>+998 77 100 05 05</span>
             </a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 8 }}>
