@@ -396,14 +396,6 @@ const Menu = ({ layout = 'grid' }) => {
           <p className="lede">{t('menu.lede')}</p>
         </div>
 
-        <div className="menu-signature-label reveal">
-          <span className="eyebrow"><span className="dot"></span>{t('menu.signatureLabel')}</span>
-        </div>
-
-        {layout === 'list' && <MenuList t={t} />}
-        {layout === 'editorial' && <MenuEditorial t={t} />}
-        {layout === 'grid' && <MenuGrid t={t} />}
-
         <div className="menu-cta-card reveal">
           <div className="menu-cta-left">
             <div className="menu-cta-eyebrow">{t('menu.viewFullSub')}</div>
