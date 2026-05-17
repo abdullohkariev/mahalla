@@ -339,7 +339,10 @@ const Footer = () => {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 8 }}>
             <span style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}>{t('footer.design')}</span>
-            <img src="assets/SD..svg" alt="SD" style={{ height: 28 }} />
+            <a href="https://shoshdigital.uz" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: 13 }}>By</span>
+              <img src="assets/SD..svg" alt="Shosh Digital" style={{ height: 28 }} />
+            </a>
           </div>
         </div>
       </div>
