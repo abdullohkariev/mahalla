@@ -335,7 +335,6 @@ const About = () => {
                 autoPlay muted loop playsInline
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
-              <div className="img-overlay-gradient"></div>
             </div>
             <div className="badge">
               <svg viewBox="-80 -80 160 160" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
