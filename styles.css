@@ -1122,8 +1122,10 @@ h2 .ital { font-style: italic; color: var(--cobalt); }
   gap: 8px;
   flex-wrap: wrap;
 }
+.guest-select { display: none; }
 @media (max-width: 600px) {
-  .reserve-form .guest-picker { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
+  .reserve-form .guest-picker { display: none; }
+  .guest-select { display: block; }
 }
 .reserve-form .guest-picker button {
   width: 44px; height: 44px;

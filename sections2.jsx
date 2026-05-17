@@ -264,6 +264,13 @@ const Reservation = () => {
                     </button>
                   ))}
                 </div>
+                <select
+                  className="guest-select"
+                  value={form.guests}
+                  onChange={(e) => setForm((f) => ({ ...f, guests: e.target.value }))}
+                >
+                  {GUESTS.map((g) => <option key={g} value={g}>{g}</option>)}
+                </select>
               </div>
 
               <div>
