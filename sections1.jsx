@@ -330,24 +330,12 @@ const About = () => {
 
           <div className="about-image-stack reveal reveal-delay-1">
             <div className="img big" style={{ backgroundColor: '#1a1612' }}>
-              <img src={PHOTOS.hallDome} alt="" loading="lazy" style={{
-                width: '100%', height: '100%', objectFit: 'cover',
-              }} />
+              <video
+                src="assets/restaurant-video.mp4"
+                autoPlay muted loop playsInline
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
               <div className="img-overlay-gradient"></div>
-              <div className="img-caption">
-                <div className="img-caption-eyebrow">{t('about.caption1.eyebrow')}</div>
-                {t('about.caption1.text')}
-              </div>
-            </div>
-            <div className="img small">
-              <img src={PHOTOS.tandyrFire} alt="" loading="lazy" style={{
-                width: '100%', height: '100%', objectFit: 'cover',
-              }} />
-              <div className="img-overlay-gradient"></div>
-              <div className="img-caption">
-                <div className="img-caption-eyebrow">{t('about.caption2.eyebrow')}</div>
-                {t('about.caption2.text')}
-              </div>
             </div>
             <div className="badge">
               <svg viewBox="-80 -80 160 160" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
