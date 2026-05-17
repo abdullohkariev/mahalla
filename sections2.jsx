@@ -176,7 +176,9 @@ const Reservation = () => {
   const submit = (e) => {
     e.preventDefault();
     if (!form.name || !form.phone || !form.date || !form.time) return;
-    const msg = `🍽 Бронирование стола\n\n👤 Имя: ${form.name}\n📞 Телефон: ${form.phone}\n📅 Дата: ${form.date}\n🕐 Время: ${form.time}\n👥 Гостей: ${form.guests}${form.occasion ? `\n🎉 Повод: ${form.occasion}` : ''}`;
+    const [y, m, d] = form.date.split('-');
+    const formattedDate = `${d}.${m}.${y}`;
+    const msg = `🍽 Бронирование стола\n\n👤 Имя: ${form.name}\n📞 Телефон: ${form.phone}\n📅 Дата: ${formattedDate}\n🕐 Время: ${form.time}\n👥 Гостей: ${form.guests}${form.occasion ? `\n🎉 Повод: ${form.occasion}` : ''}`;
     window.open(`https://t.me/mahalla90uz?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
