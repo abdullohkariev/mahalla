@@ -168,25 +168,16 @@ const GUESTS = [2, 3, 4, 5, 6, 7, 8, '9+'];
 
 const Reservation = () => {
   const t = useT();
-  const [form, setForm] = useState({ name: '', phone: '', date: '', time: '19:30', guests: 2, occasion: '', notes: '' });
+  const [form, setForm] = useState({ name: '', phone: '', date: '', time: '', guests: 2, occasion: '', notes: '' });
   const [submitted, setSubmitted] = useState(false);
 
   const update = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target ? e.target.value : e }));
 
   const submit = (e) => {
     e.preventDefault();
-    if (!form.name || !form.phone || !form.date) return;
+    if (!form.name || !form.phone || !form.date || !form.time) return;
     setSubmitted(true);
   };
-
-  useEffect(() => {
-    if (!form.date) {
-      const d = new Date();
-      d.setDate(d.getDate() + 1);
-      const iso = d.toISOString().split('T')[0];
-      setForm((f) => ({ ...f, date: iso }));
-    }
-  }, []);
 
   return (
     <section className="section reserve" id="reserve">
@@ -256,6 +247,7 @@ const Reservation = () => {
                 <div>
                   <label>{t('reserve.field.time')}</label>
                   <select value={form.time} onChange={update('time')}>
+                    <option value="" disabled hidden></option>
                     {TIMES.map((tm) => <option key={tm}>{tm}</option>)}
                   </select>
                 </div>
