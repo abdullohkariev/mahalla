@@ -46,14 +46,14 @@ const Banquets = () => {
   );
 };
 
-// ---------- Gallery (real photos) ----------
+// ---------- Gallery (videos) ----------
 const GALLERY_ITEMS = [
-  { tagKey: 'interior',   labelKey: 'hall',       cls: 'g1', photo: PHOTOS.interior1 },
-  { tagKey: 'kitchen',    labelKey: 'plov',       cls: 'g2', photo: PHOTOS.plovAlt },
-  { tagKey: 'atmosphere', labelKey: 'tandyr',     cls: 'g3', photo: PHOTOS.tandyrFire },
-  { tagKey: 'service',    labelKey: 'dastarkhan', cls: 'g4', photo: PHOTOS.dastarkhan },
-  { tagKey: 'hall',       labelKey: 'suzani',     cls: 'g5', photo: PHOTOS.suzani },
-  { tagKey: 'kitchen',    labelKey: 'grill',      cls: 'g6', photo: PHOTOS.grill },
+  { tagKey: 'interior',   cls: 'g1', video: 'assets/interior.mp4' },
+  { tagKey: 'kitchen',    cls: 'g2', video: 'assets/kitchen.mp4' },
+  { tagKey: 'atmosphere', cls: 'g3', video: 'assets/atmosphere.mp4' },
+  { tagKey: 'service',    cls: 'g4', video: 'assets/service.mp4' },
+  { tagKey: 'hall',       cls: 'g5', video: 'assets/hall.mp4' },
+  { tagKey: 'kitchen',    cls: 'g6', video: 'assets/kitchen-2.mp4' },
 ];
 
 const Gallery = () => {
@@ -75,7 +75,7 @@ const Gallery = () => {
         <div className="gallery-grid">
           {GALLERY_ITEMS.map((g, i) => (
             <div key={i} className={`gallery-cell ${g.cls} reveal`} style={{ transitionDelay: `${i * 0.05}s` }}>
-              <img src={g.photo} alt="" loading="lazy" />
+              <video src={g.video} autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
               <span className="tag">{t(`gallery.tag.${g.tagKey}`)}</span>
             </div>
           ))}
