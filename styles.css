@@ -1222,8 +1222,8 @@ h2 .ital { font-style: italic; color: var(--cobalt); }
   color: rgba(245, 239, 226, 0.7);
 }
 .footer-base .socials a:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); }
-.footer-base .socials a.phone-link { width: auto; height: auto; border-radius: 0; border: none; background: none; padding: 0; }
-.footer-base .socials a.phone-link:hover { background: none; border: none; color: var(--gold); }
+a.phone-number { font-size: 13px; letter-spacing: 0.03em; color: rgba(245,239,226,0.7); white-space: nowrap; transition: color 0.2s ease; }
+a.phone-number:hover { color: var(--gold); }
 
 /* ---------- Reveal animations (no-op: keep selectors for layout, no opacity tricks) ---------- */
 .reveal { /* intentionally empty — content visible by default */ }
