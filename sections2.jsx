@@ -341,7 +341,7 @@ const Footer = () => {
             <span style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}>{t('footer.design')}</span>
             <a href="https://shoshdigital.uz" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
               <span style={{ fontFamily: 'var(--font-body)', fontSize: 13 }}>By</span>
-              <img src="assets/SD..svg" alt="Shosh Digital" style={{ height: 28 }} />
+              <img src="assets/SD..svg" alt="Shosh Digital" style={{ height: 18 }} />
             </a>
           </div>
         </div>
