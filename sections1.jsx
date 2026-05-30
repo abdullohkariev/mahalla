@@ -219,10 +219,11 @@ const HeroLogoVisual = () => (
       borderRadius: '50%',
       background: '#fbf6ea',
       display: 'grid', placeItems: 'center',
+      overflow: 'hidden',
       boxShadow: '0 30px 80px rgba(0,0,0,0.4), inset 0 0 0 6px rgba(216,166,87,0.4)',
       position: 'relative', zIndex: 2,
     }}>
-      <img src="assets/logo.jpg" alt="Mahalla 90'" style={{ width: '88%', mixBlendMode: 'multiply' }} />
+      <img src="assets/logo.jpg" alt="Mahalla 90'" style={{ width: '88%', borderRadius: '50%', display: 'block' }} />
     </div>
 
     <div style={{ position: 'absolute', top: '8%', left: '6%', color: '#d8a657', opacity: 0.4 }}>
