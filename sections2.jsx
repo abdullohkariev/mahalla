@@ -168,6 +168,7 @@ const GUESTS = [2, 3, 4, 5, 6, 7, 8, '9+'];
 
 const Reservation = () => {
   const t = useT();
+  const { lang } = useLang();
   const [form, setForm] = useState({ name: '', phone: '', date: '', time: '', guests: 2, occasion: '', notes: '' });
   const [submitted, setSubmitted] = useState(false);
 
@@ -245,11 +246,11 @@ const Reservation = () => {
               <div className="grid">
                 <div>
                   <label>{t('reserve.field.date')}</label>
-                  <input type="date" value={form.date} onChange={update('date')} required />
+                  <input type="date" lang={lang} value={form.date} onChange={update('date')} required />
                 </div>
                 <div>
                   <label>{t('reserve.field.time')}</label>
-                  <input type="time" value={form.time} onChange={update('time')} required />
+                  <input type="time" lang={lang} value={form.time} onChange={update('time')} required />
                 </div>
               </div>
 
