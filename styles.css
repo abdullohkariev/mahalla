@@ -176,6 +176,9 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .nav-brand .apostrophe { color: var(--gold); }
 
 .nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 36px;
   font-size: 13px;
@@ -1252,6 +1255,7 @@ h2 .ital { font-style: italic; color: var(--cobalt); }
 .footer ul li:hover { color: var(--gold-2); }
 
 .footer-base {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1263,6 +1267,9 @@ h2 .ital { font-style: italic; color: var(--cobalt); }
   gap: 16px;
 }
 .footer-base .socials {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 18px;
 }
