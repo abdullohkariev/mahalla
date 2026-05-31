@@ -202,6 +202,10 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 }
 .nav-links a:hover::after { width: 100%; }
 
+html[lang="ru"] .nav-links {
+  transform: translateX(calc(-50% - 44px));
+}
+
 .nav-cta {
   display: inline-flex;
   align-items: center;
